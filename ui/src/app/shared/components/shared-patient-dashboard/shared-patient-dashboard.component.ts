@@ -596,11 +596,13 @@ export class SharedPatientDashboardComponent implements OnInit {
     }, 500);
   }
 
-  onDischargePatient(event: Event, invoice?: any): void {
-    this.trackActionForAnalytics(`View Discharge: Open`);
-    event.stopPropagation();
-    this.dichargePatient.emit({ discharge: true, invoice: invoice });
-  }
+ //implementation of the discharge button
+ onDischargePatient(event: Event, invoice?: any): void {
+  console.log('You clicked me....');
+  this.trackActionForAnalytics(`View Discharge: Open`);
+  event.stopPropagation();
+  this.dichargePatient.emit({ discharge: true, invoice: invoice });
+}
 
   onOpenModalToEndConsultation(
     event: Event,
