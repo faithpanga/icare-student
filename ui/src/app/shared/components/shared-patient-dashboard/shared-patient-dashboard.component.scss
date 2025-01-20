@@ -83,3 +83,45 @@ button {
   border-bottom: solid 1px #e6e6e654;
   border-top: solid 1px #e6e6e654;
 }
+
+/* Base button class */
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+/* Stroked button variant */
+.btn-stroked {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: #3f51b5; /* Primary color */
+}
+
+.btn-stroked:hover {
+  background-color: rgba(63, 81, 181, 0.08); /* Hover background */
+  border-color: rgba(63, 81, 181, 0.5); /* Hover border color */
+}
+
+.btn-stroked:active {
+  background-color: rgba(63, 81, 181, 0.16); /* Active background */
+}
+
+.btn-stroked:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.3); /* Focus ring */
+}
+
+/* Utility classes */
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.float-right {
+  float: right;
+}
